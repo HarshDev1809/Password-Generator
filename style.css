@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+}
+
+.not-login-div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* menu bar 1----------------------------------------------------------- */
+
+.menu-bar-not-login{
+    height: 8%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+
+.login-div{
+    position: relative;
+    right: 0;
+    height: 80%;
+    width: 13vw;
+    background-color: #EADDCA;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 85%;
+}
+
+
+/* password-generator--------------------------------------------------- */
+.password-generator-div{
+    background-color: #EADDCA;
+    height: 92%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.password-generator-un-div{
+    height: 80%;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.generate-btn{
+    height: 8%;
+    width: 10%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 20px;
+}
+
+.generate-btn:hover{
+    cursor: pointer;
+}
+
+.password-generator-un{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px
+}
+
+.result-un{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 50%;
+}
+
+.password-username{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EADDCA;
+    border-radius: 7px 0 0 7px;
+}
+
+.value{
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 10px;
+    border-top: 1px solid #EADDCA;
+    border-bottom: 1px solid #EADDCA;
+    border-right: 1px solid #EADDCA;
+    border-radius: 0 7px 7px 0;
+}
+
+.character{
+    border-bottom: 10px solid;
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 80px;
+    padding-bottom: 10px;
+}
+
+.character-div{
+    height: 90%;
+    width: 10%;
+    margin: 8px;
+    background-color: #EADDCA;
+}
+
+#options{
+    width: 100%;
+    height: 20%;
+    font-size: 15px;
+    outline: 0;
+    background-color: #EADDCA;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 0;
+}
+
+#options:hover{
+    cursor: pointer;
+}
+
+.login-menu-div{
+    height: 70vh;
+    width: 30vw;
+    background-color: rgba(234, 221, 202,1);
+    position: absolute;
+    z-index: 1;
+    top: 15vh;
+    left:35vw;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-menu,.sign-in-menu{
+    background-color: rgba(234, 221, 202,0);
+    height: 60%;
+    width: 70%;
+}
+
+.password-input,.new-input-username{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-input-btn{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.sign-in-input-btn{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.input{
+    height: 80%;
+    width: 100%;
+    background-color: rgba(255, 255, 255,1);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 10px;
+    outline: 0;
+    padding-left: 10px;
+}
+
+.login-sign-btn,.new-login-sign-btn{
+    height: 60%;
+    width: 40%;
+    border: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.open{
+    display:block;
+}
+
