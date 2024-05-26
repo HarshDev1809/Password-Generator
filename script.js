@@ -7,6 +7,12 @@ const refrenceObj = { "capital_letter": capitalAlphabets, "small_letter": smallA
 
 getArray();
 
+let copyText="";
+
+function copyToClipboad() {
+    navigator.clipboard.writeText(copyText);
+  }
+
 function getArray() {
     for (let i = 0; i <= 25; i++) {
         if (i <= 9)
@@ -23,6 +29,7 @@ $(".generate-btn").click(function () {
     let password = generatePassword();
     console.log(password);
     displayPassword(password);
+    copyText = password;
 });
 
 function displayPassword(password) {
