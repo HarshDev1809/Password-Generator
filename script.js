@@ -27,7 +27,6 @@ $(".generate-btn").click(function () {
     for (let i = 0; i < $(".character-div #options").length; i++)
         choice.push($($(".character-div")[i]).find(":selected").val());
     let password = generatePassword();
-    console.log(password);
     displayPassword(password);
     copyText = password;
 });
@@ -38,6 +37,7 @@ function displayPassword(password) {
     let k = 0
     let characterDiv = Object.entries($(".character-div")).slice(0, 10);
     characterDiv.forEach(function (value, index) {
+        $(($(value).children()[0])).text("")
         if ($(value).children()[1].value != "empty") {
             $(($(value).children()[0])).text(passwd[j]);
             j++;
