@@ -21,24 +21,22 @@
 
 /* menu bar 1----------------------------------------------------------- */
 
-.menu-bar-not-login{
+.menu-bar{
     height: 8%;
     width: 100vw;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .login-div{
-    position: relative;
-    right: 0;
     height: 80%;
-    width: 13vw;
+    padding: 10px;
     background-color: #EADDCA;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 85%;
 }
 
 
@@ -61,8 +59,8 @@
 }
 
 .generate-btn{
+    padding: 7px;
     height: 8%;
-    width: 10%;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -80,9 +78,8 @@
     height: 70%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly; 
     align-items: center;
-    padding: 40px
 }
 
 .result-un{
@@ -103,12 +100,13 @@
 
 .password-username{
     height: 100%;
-    width: 30%;
+    /* width: 30%; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EADDCA;
     border-radius: 7px 0 0 7px;
+    padding: 10px
 }
 
 .value{
@@ -120,8 +118,8 @@
     padding: 0 10px;
     border-top: 1px solid #EADDCA;
     border-bottom: 1px solid #EADDCA;
-    border-right: 1px solid #EADDCA;
-    border-radius: 0 7px 7px 0;
+    border-right: 0;
+    /* border-radius: 0 7px 7px 0; */
 }
 
 .character{
@@ -138,8 +136,7 @@
 
 .character-div{
     height: 90%;
-    width: 10%;
-    margin: 8px;
+    width: 8%;
     background-color: #EADDCA;
 }
 
@@ -229,5 +226,40 @@
 
 .open{
     display:block;
+}
+
+.copy-btn{
+    height: 100%;
+    background-color: white;
+    color: gray;
+    border-radius: 0 7px 7px 0;
+    border-top: 1px solid #EADDCA;
+    border-bottom: 1px solid #EADDCA;
+    border-right: 1px solid #EADDCA;
+    border-left: 0;
+    width: 10%;
+    
+}
+
+.copy-btn :hover{
+    cursor: pointer;
+}
+
+/* responsive--------------------------------------------------------------------------------- */
+
+@media screen and (max-width : 768px) {
+    .password-generator-un{
+        padding : 0;
+        width: 100%;
+    }
+    .password-generator-un-div{
+        width: 99%;
+    }
+    .result{
+        width: 80%;
+    }
+    .copy-btn{
+        width: 10%;
+    }
 }
 
